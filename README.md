@@ -57,15 +57,19 @@ Utilisant votre script précédent, le modifier pour réaliser les taches suivan
 
 A manière de comparaison, réaliser l'attaque sur le [fichier de capture](files/PMKID_handshake.pcap) utilisant la méthode décrite [ici](https://hashcat.net/forum/thread-7717.html).
 
-**Remarque:** 
+**Remarque:** L'attaque a été faite sur une VM Kali.
 
 On commence par convertir le fichier pcap vers un format compatible avec hashcat :
 
-![step 3](images/hcxpcaptool-conversion.png)
+![pcap formating](images/pmkid_list.png)
 
-On lance ensuite hashcat sur le fichier `pmkid.16800`:
+On lance ensuite hashcat sur le fichier `pmikidlist.16800`:
 
-![](images/hashcat.png)
+![hashcat attack](images/hashcat.png)
+
+Après 12 minutes hashcat trouve le PMKID (`admin123`) de la capture wireshark :
+
+![PMKID found](images/hashcat-results.png)
 
 
 ## Livrables
