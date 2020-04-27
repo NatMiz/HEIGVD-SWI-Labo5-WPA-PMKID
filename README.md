@@ -59,7 +59,13 @@ A manière de comparaison, réaliser l'attaque sur le [fichier de capture](files
 
 **Remarque:** 
 
-![step 3](/home/stefan/CloudStation/HEIG_3ème/Semestre2/SWI/Laboratoires/HEIGVD-SWI-Labo5-WPA-PMKID/images/hcxpcaptool-conversion.png)
+On commence par convertir le fichier pcap vers un format compatible avec hashcat :
+
+![step 3](images/hcxpcaptool-conversion.png)
+
+On lance ensuite hashcat sur le fichier `pmkid.16800`:
+
+![](images/hashcat.png)
 
 
 ## Livrables
