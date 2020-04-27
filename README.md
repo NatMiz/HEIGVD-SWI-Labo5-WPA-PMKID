@@ -49,10 +49,17 @@ Utilisant votre script précédent, le modifier pour réaliser les taches suivan
    - Identiques &rarr; La passphrase utilisée est correcte
    - Différents &rarr; Essayer avec une nouvelle passphrase
 
+**Remarque:** On peut voir dans le screenshot çi-dessous que au premier test nous n'avons pas la bonne passphrase dans la liste et que dans la 2ème tentative elle y est.
+
+![step1and2](images/pmkid_attaque.png)
 
 ### 3. Attaque hashcat
 
 A manière de comparaison, réaliser l'attaque sur le [fichier de capture](files/PMKID_handshake.pcap) utilisant la méthode décrite [ici](https://hashcat.net/forum/thread-7717.html).
+
+**Remarque:** 
+
+![step 3](/home/stefan/CloudStation/HEIG_3ème/Semestre2/SWI/Laboratoires/HEIGVD-SWI-Labo5-WPA-PMKID/images/hcxpcaptool-conversion.png)
 
 
 ## Livrables
