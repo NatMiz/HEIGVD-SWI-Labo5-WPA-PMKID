@@ -12,6 +12,8 @@ __A faire en équipes de deux personnes__
 
 __Développement à faire en Python 3__
 
+**Étudiants :** Stefan Dejanovic, Nathanaël Mizutani
+
 ### Pour cette partie pratique, vous devez être capable de :
 
 * A partir d’une capture Wireshark, extraire la valeur de la PMKID utilisant Scapy
@@ -49,7 +51,7 @@ Utilisant votre script précédent, le modifier pour réaliser les taches suivan
    - Identiques &rarr; La passphrase utilisée est correcte
    - Différents &rarr; Essayer avec une nouvelle passphrase
 
-**Remarque:** On peut voir dans le screenshot çi-dessous que au premier test nous n'avons pas la bonne passphrase dans la liste et que dans la 2ème tentative elle y est.
+**Remarque:** On peut voir dans le screenshot ci-dessous que lors du premier test nous n'avons pas la bonne passphrase dans la liste, tandis que dans la 2ème tentative elle y est.
 
 ![step1and2](images/pmkid_attaque.png)
 
@@ -67,7 +69,7 @@ On lance ensuite hashcat sur le fichier `pmikidlist.16800`:
 
 ![hashcat attack](images/hashcat.png)
 
-Après 12 minutes hashcat trouve le PMKID (`admin123`) de la capture wireshark :
+Après 12 minutes, hashcat trouve le PMKID (`admin123`) de la capture wireshark :
 
 ![PMKID found](images/hashcat-results.png)
 
